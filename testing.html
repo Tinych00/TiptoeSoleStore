@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <style>
+      /* Style for the page */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Style for the header */
+      header {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+
+      /* Style for the shopping cart items */
+      .cart-items {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 1fr;
+        grid-gap: 10px;
+        margin: 20px;
+      }
+
+      /* Style for the shopping cart item */
+      .cart-item {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      /* Style for the shopping cart item image */
+      .cart-item img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        margin-right: 10px;
+      }
+
+      /* Style for the shopping cart item title */
+      .cart-item h3 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: normal;
+      }
+
+      /* Style for the shopping cart item quantity */
+      .cart-item .quantity {
+        display: flex;
+        align-items: center;
+      }
+
+      /* Style for the shopping cart item quantity input */
+      .cart-item .quantity input {
+        width: 30px;
+        margin-right: 5px;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      /* Style for the shopping cart item remove button */
+      .cart-item .remove {
+        font-size: 20px;
+        color: #f00;
+        cursor: pointer;
+      }
+
+      /* Style for the shopping cart subtotal */
+      .subtotal {
+        display: flex;
+        justify-content: flex-end;
+        margin: 20px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      /* Style for the shopping cart checkout button */
+      .checkout {
+        display: block;
+        margin: 20px;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      /* Style for the footer */
+      footer {
+        background-color: #ddd;
+        padding: 10px;
+        text-align: center;
+      }
+
+      /* Media query for mobile devices */
+      @media only screen and (max-width: 768px) {
+        .cart-items {
+          grid-template-columns: 1fr;
+        }
+
+        .cart-item {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .cart-item img {
+          margin: 0 auto 10px;
+        }
+
+        .cart-item .quantity {
+          margin-top: 10px;
+        }
+
+        .subtotal {
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Shopping Cart</h1>
+    </header>
+    <div class="cart-items">
+      <div class="cart-item">
+</body>

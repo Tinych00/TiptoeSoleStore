@@ -1,0 +1,25 @@
+
+.alert {
+  padding: 20px;
+  background-color: #717171;
+  color: #f2d746;
+  position: fixed;
+  top: 100;
+  left: 0;
+  width: 98%;
+  text-align: center;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: #f2d746;
+  font-weight: bold;
+  float: right;
+  font-size: 30px;
+  line-height: 60px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
