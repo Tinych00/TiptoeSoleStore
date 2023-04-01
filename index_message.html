@@ -2,6 +2,7 @@
 <html lang="en-au">
 <head>
 <link rel="stylesheet" href="bar.css">
+<link rel="stylesheet" href="slide.css">
 <link rel="stylesheet" href="message_pop.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>TipTop Soles</title>
@@ -48,7 +49,87 @@
 <p>We aim to provide comfortable footwear at affordable prices to customers 
 within Australia and around the world.</p>
 <p>Please use the following menu at the top to navigate around our site.</p>
+<body>
 
+<div class="slideshow-container">
 
+<div class="Slides">
+  <div class="numbertext">1 / 7</div>
+ <a href="TipToe_soles_products.html"><img src="assets\Gary_Black.jpg" alt="Black shoes" style="width:100%"></a>
+  <div class="text">Gary Black</div>
+</div>
+
+<div class="Slides">
+  <div class="numbertext">2 / 7</div>
+  <a href="TipToe_soles_products.html"><img src="assets\Gary_Tan.jpg" alt="Tan shoes" style="width:100%"></a>
+  <div class="text">Gary Tan</div>
+</div>
+
+<div class="Slides">
+  <div class="numbertext">3 / 7</div>
+  <a href="TipToe_soles_products.html"><img src="assets\Gary_Black.jpg" alt="Black shoes" style="width:100%"></a>
+  <div class="text">Gary Black</div>
+</div>
+  
+<div class="Slides">
+  <div class="numbertext">4 / 7</div>
+  <a href="TipToe_soles_products.html"><img src="assets\Work_and_Walk_Chesnut.jpg" alt="Chestnut shoes" style="width:100%"></a>
+  <div class="text">Work & Walk</div>
+</div>
+  
+<div class="Slides">
+  <div class="numbertext">5 / 7</div>
+  <a href="TipToe_soles_products.html"><img src="assets\Sally_Black.jpg" alt="Black shoes" style="width:100%"></a>
+  <div class="text">Sally Black</div>
+</div>
+  
+<div class="Slides">
+  <div class="numbertext">6 / 7</div>
+  <a href="TipToe_soles_products.html"><img src="assets\Sally_Tan.jpg" alt="Tan shoes" style="width:100%"></a>
+  <div class="text">Sally Tan</div>
+</div>
+  
+<div class="Slides">
+  <div class="numbertext">7 / 7</div>
+  <a href="TipToe_soles_products.html"><img src="assets\Heavenly_Black.jpg" alt="Black shoes" style="width:100%"></a>
+  <div class="text">Heavenly Black</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("Slides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
+  
+</body>
 </body>
 </html>
