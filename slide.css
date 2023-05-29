@@ -13,7 +13,7 @@ img {vertical-align: middle;}
 
 /* Caption text */
 .text {
-  color: #404040;
+  color: #f2d746;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -24,7 +24,7 @@ img {vertical-align: middle;}
 
 /* Number text (1/7) */
 .numbertext {
-  color: #404040;
+  color: #f2d746;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
