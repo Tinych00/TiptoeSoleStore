@@ -9,7 +9,7 @@
 
 /* Caption text */
 .text {
-  color: #f2d746;
+  color: #020202;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -20,7 +20,7 @@
 
 /* Number text (1/7) */
 .numbertext {
-  color: #f2d746;
+  color: #020202;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
