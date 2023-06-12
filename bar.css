@@ -28,7 +28,7 @@ body {margin:0;}
   padding: 59px 44px;
   background-color: inherit;
   font-family: inherit;
-  margin: 300;
+  margin:0; 300;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
