@@ -1,4 +1,4 @@
-/* Dropdown icon */
+ /* Dropdown icon */
 .dropdown-icon {
   display: inline-block;
   width: 0.5em;
@@ -22,6 +22,15 @@
   overflow: hidden;
 }
 
+.navbar a {
+  font-size: 30px;
+  display: block;
+  color: #f2d746;
+  text-align: center;
+  padding: 59px 60px;
+  text-decoration: none;
+}
+
 .navbar ul {
   list-style-type: none;
   margin: 0;
@@ -33,23 +42,11 @@
   flex: 1;
 }
 
-.navbar a {
-  display: block;
-  color: #f2d746;
-  text-align: center;
-  padding: 20px;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  background-color: #717171; /* New background color for hover */
-}
-
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #8f8d8d;
-  min-width: 160px;
+  width: 18%; 
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -60,17 +57,24 @@
 
 .dropdown-content a {
   color: #f2d746;
-  padding: 12px 16px;
+  padding: 14px 16px;
   text-decoration: none;
   display: block;
+  width: 100%; 
 }
 
 .dropdown-content a:hover {
   background-color: #717171;
 }
 
-.responsive {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-} 
+/* New rule for hover state of tabs */
+.navbar li:hover a {
+  background-color: #717171;
+  color: #f2d746;
+}
+
+/* New rule for hover state of dropdown tabs */
+.dropdown:hover .dropdown-content a:hover {
+  background-color: #8f8d8d;
+  color: #f2d746;
+}
