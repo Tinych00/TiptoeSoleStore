@@ -1,15 +1,15 @@
- /* Dropdown icon */
+/* Dropdown icon */
 .dropdown-icon {
   display: inline-block;
-  width: 0.5em;
-  height: 0.5em;
+  width: 1vw; /* Relative width */
+  height: 1vw; /* Relative height */
   border: solid #f2d746;
-  border-width: 0 2px 2px 0;
+  border-width: 0 0.25vw 0.25vw 0; /* Relative border width */
   transform: rotate(45deg);
   transition: transform 0.3s ease;
   vertical-align: middle;
-  margin-left: 5px; /* Add margin to the left */
-  margin-bottom: 2px; /* Add margin to the bottom */
+  margin-left: 0.5vw; /* Relative margin */
+  margin-bottom: 0.2vw; /* Relative margin */
 }
 
 /* Dropdown icon animation for hover */
@@ -23,11 +23,11 @@
 }
 
 .navbar a {
-  font-size: 45px;
+  font-size: 2vw; /* Relative font size */
   display: block;
   color: #f2d746;
   text-align: center;
-  padding: 59px 60px;
+  padding: 3.5vw 4vw; /* Relative padding */
   text-decoration: none;
 }
 
@@ -46,8 +46,8 @@
   display: none;
   position: absolute;
   background-color: #8f8d8d;
-  width: 18%; 
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: 18%; /* Percentage width */
+  box-shadow: 0px 0.8vw 1.6vw 0px rgba(0,0,0,0.2); /* Relative box shadow */
   z-index: 1;
 }
 
@@ -57,14 +57,14 @@
 
 .dropdown-content a {
   color: #f2d746;
-  padding: 14px 16px;
+  padding: 1.4vw 1.6vw; /* Relative padding */
   text-decoration: none;
   display: block;
   width: 100%; 
 }
 
 .dropdown-content a:hover {
-  background-color: #717171;
+  background-color: #8f8d8d;
 }
 
 /* New rule for hover state of tabs */
