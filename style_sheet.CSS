@@ -1,0 +1,11 @@
+/* Dropdown icon */
+.dropdown .dropbtn{
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+  vertical-align: middle;
+}
