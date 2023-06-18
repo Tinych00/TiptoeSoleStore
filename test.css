@@ -49,7 +49,7 @@
   position: absolute;
   background-color: #8f8d8d;
   width: 18%; /* Percentage width */
-  box-shadow: 0px 0.8vw 1.6vw 0px rgba(0,0,0,0.2); /* Relative box shadow */
+  box-shadow: 0px 0.8vw 1.6vw 0px rgba(0, 0, 0, 0.2); /* Relative box shadow */
   z-index: 1;
 }
 
@@ -62,7 +62,7 @@
   padding: 1.4vw 1.6vw; /* Relative padding */
   text-decoration: none;
   display: block;
-  width: 100%; 
+  width: 100%;
 }
 
 .dropdown-content a:hover {
@@ -79,6 +79,33 @@
 .dropdown:hover .dropdown-content a:hover {
   background-color: #8f8d8d;
   color: #f2d746;
+}
+
+/* Purchase alert */
+.alert {
+  padding: 20px;
+  background-color: #717171;
+  color: #f2d746;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: #f2d746;
+  font-weight: bold;
+  float: right;
+  font-size: 30px;
+  line-height: 60px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
 }
 
 /* Gallery */
@@ -172,13 +199,19 @@ div.desc {
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* On smaller screens, decrease slideshow text size */
 @media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+  .text {
+    font-size: 11px;
+  }
 }
 
 /* Form styles */
@@ -196,7 +229,8 @@ label {
   margin-bottom: 10px;
 }
 
-input[type="text"], input[type="text"] {
+input[type="text"],
+input[type="password"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -205,7 +239,7 @@ input[type="text"], input[type="text"] {
 }
 
 input[type="submit"] {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 10px 20px;
   border: none;
