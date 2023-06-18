@@ -1,12 +1,76 @@
 /* Dropdown icon */
-.dropdown .dropbtn{
+.dropdown-icon {
   display: inline-block;
   width: 0.5em;
   height: 0.5em;
-  border: solid #000;
+  border: solid #f2d746;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
   transition: transform 0.3s ease;
   vertical-align: middle;
+  margin-left: 5px; /* Add margin to the left */
+  margin-bottom: 2px; /* Add margin to the bottom */
 }
 
+/* Dropdown icon animation for hover */
+.dropdown:hover .dropdown-icon {
+  transform: rotate(225deg);
+}
+
+.navbar {
+  background-color: #404040;
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  flex: 1;
+}
+
+.navbar a {
+  display: block;
+  color: #f2d746;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #717171; /* New background color for hover */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #8f8d8d;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #f2d746;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #717171;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+} 
